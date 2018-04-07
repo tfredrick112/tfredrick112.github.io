@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Session 3</title>
+</head>
+<body>
+	<center>
+
+	<h1>calculator</h1>
+	<p>a =
+	<input id ="a"></input>
+	<br>b = 
+	<input id ="b"></input></p>
+	<br>
+	<button onclick="add()">add</button>
+	<button onclick="multiply()">multiply</button>
+	<button onclick="subtract()">subtract</button>
+	<button onclick="divide()">divide</button>
+	<button onclick="power()">power</button>
+	<div id = "ans"></div>
+	</center>
+	<script>
+	function add(){
+		var a = parseInt(document.getElementById("a").value);
+		var b = parseInt(document.getElementById("b").value);
+		document.getElementById("ans").innerHTML = a + b;
+	
+	}
+	function multiply(){
+		var a = parseInt(document.getElementById("a").value);
+		var b = parseInt(document.getElementById("b").value);
+		document.getElementById("ans").innerHTML = a*b;
+	}
+	function subtract(){
+		var a = parseInt(document.getElementById("a").value);
+		var b = parseInt(document.getElementById("b").value);
+		document.getElementById("ans").innerHTML = a-b;
+	}
+	function divide(){
+		var a = parseInt(document.getElementById("a").value);
+		var b = parseInt(document.getElementById("b").value);
+		document.getElementById("ans").innerHTML = a/b;
+	}
+	function power(){
+		var a = parseInt(document.getElementById("a").value);
+		var b = parseInt(document.getElementById("b").value);
+		document.getElementById("ans").innerHTML = Math.pow(a,b);
+	}
+
+
+
+	</script>
+
+</body>
+</html>
